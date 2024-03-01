@@ -65,8 +65,10 @@ h6 {
       "content aside"
       "footer footer";
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 300px;
     height: 100vh;
+    max-width: 75%;
+    gap: 10px
   }
   
   header {
@@ -77,18 +79,41 @@ h6 {
   aside {
     grid-area: aside;
     background-color: #d3d3d3;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* flex:  0 0 30%; */
   }
   
-  content {
+  .content {
     grid-area: content;
-    background-color: #ffffff;
+    /* flex: 1; */
+    border-left: 2px solid black;
+    border: 2px solid black;
   }
   
   footer {
     grid-area: footer;
     background-color: aqua;
+    width: 100%;
+    border: 2px solid black;
+
 
   }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "content aside"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+    
+  }
+
+
 
 /* NAVBAR */
 
@@ -110,7 +135,7 @@ h6 {
 }
 
 .routes a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -179,4 +204,46 @@ h6 {
     }
 }
 
+/* lateral aside */
+
+.aside_item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* HOME CONTENT */
+
+.content_item {
+  display: flex ;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.content_item h3 {
+    margin: 10px;
+    width: 100%;
+    text-align: start;
+    font-size: 24px;
+    
+    color: goldenrod;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    border-width: 100%;
+}
+
+
+.content_item img {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  
+}
 
