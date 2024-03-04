@@ -110,11 +110,16 @@ h6 {
 
 .navbar {
     background-color: whitesmoke;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
 
 }
 
@@ -129,11 +134,16 @@ h6 {
     color: black;
     text-decoration: none;
     margin-right: 10px;
+    padding: 10px;
+    background-color: #4ABDAC;
 }
 
 .routes a:hover {
     background-color: #4ABDAC;
+    color: white;
     border-radius: 5px;
+    padding: 5px;
+
 
 }
 
@@ -157,7 +167,7 @@ h6 {
 }
 
 .routes_list a:hover {
-    background-color: #4ABDAC;
+  background-color: #4ABDAC;
 }
 
 .nav_sidebar {
