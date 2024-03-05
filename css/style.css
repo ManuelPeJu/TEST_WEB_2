@@ -139,7 +139,7 @@ h6 {
 }
 
 .routes a:hover {
-    background-color: #4ABDAC;
+    /* background-color: #4ABDAC; */
     color: white;
     border-radius: 5px;
     padding: 5px;
@@ -167,7 +167,7 @@ h6 {
 }
 
 .routes_list a:hover {
-  background-color: #4ABDAC;
+  /* background-color: #4ABDAC; */
 }
 
 .nav_sidebar {
@@ -237,13 +237,21 @@ h6 {
     border-bottom: 1px solid black;
 }
 
+.aside_item a {
+    text-decoration: none;
+    color: #707070;
+    width: 100%;
+}
+
 .aside_item h4 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     width: 100%;
     text-align: start;
     color: #707070;
     letter-spacing: 2px;
     text-transform: uppercase;
+    border-bottom: 1px solid grey;
+    
 }
 
 
