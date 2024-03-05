@@ -49,12 +49,6 @@ h6 {
 }
 
 
-/* color variables */
-
-:root {
-    
-}
-
 
 /* GRID LAYOUT */
 
@@ -305,3 +299,33 @@ h6 {
     
 }
 
+/* PRICE PAGE */
+
+.price_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 10px;
+}
+
+.price_container h1 {
+  color: #707070;
+  margin-bottom: 35px;  
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+.house_price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+
+}
+
+.house_price h3 {
+  letter-spacing: 1px;
+}
