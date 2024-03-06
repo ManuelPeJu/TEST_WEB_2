@@ -27,3 +27,14 @@ El objetivo principal de este proyecto es mejorar mis habilidades en desarrollo 
 
 ### Acerca de la Página Original
 La página original fue creada por mi padre, y decidí utilizarla como base para mi proyecto de práctica. Sirve como punto de referencia para implementar diversas técnicas de estilo y elementos interactivos.
+
+Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- SweetAlert2
+
+- ## Contributors - Contribuidores
+
+- [Manuel Pérez Jurado](https://github.com/ManuelPeJu)
