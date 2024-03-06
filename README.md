@@ -11,6 +11,12 @@ The main goal of this project is to improve my skills in front-end development b
 ### About the Original Website
 The original website was created by my father, and I decided to use it as a base for my practice project. It serves as a reference point for implementing various styling techniques and interactive elements.
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
 ## Español
 
 ### Descripción
