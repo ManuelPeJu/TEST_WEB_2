@@ -116,16 +116,9 @@ h6 {
 .navbar {
     background-color: whitesmoke;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-
+    height: 65px;
 }
 
 .logo a {
@@ -133,23 +126,6 @@ h6 {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-}
-
-.routes a {
-    color: black;
-    text-decoration: none;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #4ABDAC;
-}
-
-.routes a:hover {
-    /* background-color: #4ABDAC; */
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-
-
 }
 
 .routes_list {
@@ -162,6 +138,19 @@ h6 {
     
 }
 
+.routes_list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.routes_list li:hover {
+    background-color: #4ABDAC;
+}
+
 .routes_list a {
     text-decoration: none;
     color: black;
@@ -169,10 +158,6 @@ h6 {
     font-size: 18px;
     padding: 10px;
     
-}
-
-.routes_list a:hover {
-  /* background-color: #4ABDAC; */
 }
 
 .nav_sidebar {
@@ -284,16 +269,28 @@ h6 {
   margin-top: 30px;
 }
 
-.card_grid {
+.home_2 {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  margin-inline: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+
+}
+
+.home_container section {
+  margin: 60px;
+  flex: 1;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .card {
@@ -320,16 +317,6 @@ h6 {
   font-weight: bold;
 }
 
-.home_2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50vh;
-
-}
-
 .card_info {
   display: flex;
   flex-direction: row;
@@ -347,11 +334,6 @@ h6 {
   padding: 10px;
   gap: 10px;
   max-width: 50%;
-}
-
-.home_container section {
-  margin: 60px;
-  flex: 1;
 }
 
 
