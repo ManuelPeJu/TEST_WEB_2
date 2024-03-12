@@ -131,6 +131,37 @@ h6 {
 
 
 
+/* Push To Top */
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #scrollBtn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+#scrollBtn:hover {
+  background-color: var(--accent);
+}
+
+
 /* NAVBAR */
 
 .navbar {
@@ -230,7 +261,7 @@ h6 {
     }
 
     .navbar {
-        justify-content: space-between;
+        justify-content:  space-between;
     }
 }
 
@@ -467,7 +498,7 @@ h6 {
   display: block;
 }
 
-button {
+.slider_btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
