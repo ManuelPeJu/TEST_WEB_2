@@ -11,6 +11,10 @@ document.querySelector('.hamburger-btn').addEventListener('click', function() {
 
 
 
+
+
+// house pictures
+
 const images = [
     "assets/camposnubes/casa-camponubes-006.jpg",
     "assets/camposnubes/casa-camponubes-010.jpg",
@@ -42,4 +46,29 @@ images.forEach(image => {
   img.src = image
   imgGrid.appendChild(img);
 })
-  
+
+
+let slideIndex = 0;
+const slider = document.querySelector('.slider');
+
+function showSlide(n) {
+  if (n < 0) {
+    slideIndex = images.length - 1;
+  } else if (n >= images.length) {
+    slideIndex = 0;
+  } else {
+    slideIndex = n;
+  }
+
+  slider.innerHTML = `<img src="${images[slideIndex]}" alt="Slide ${slideIndex + 1}">`;
+}
+
+function nextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+showSlide(slideIndex);
