@@ -748,6 +748,12 @@ h6 {
   color: #4ABDAC;
 }
 
+.footer_contet ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
 
 
 @media screen and (max-width: 1024px) {
