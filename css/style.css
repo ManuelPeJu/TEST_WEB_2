@@ -8,6 +8,7 @@
 /* Remove default margin */
 * {
   margin: 0;
+  padding: 0;
 }
 
 /* Add accesible line-height and improve text rendering */
@@ -56,7 +57,8 @@ h6 {
     margin: 0 auto;
     display: grid;
     grid-template-areas:
-      "content aside";
+      "content aside"
+      "footer footer";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 300px;
     height: 100vh;
@@ -77,9 +79,11 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1 0 auto;
   }
   
   footer {
+    grid-area: footer;
     width: 100%;
     height: 100%;
     margin-top: 100px;
@@ -255,11 +259,17 @@ h6 {
 
 .show-sidebar {
     width: 300px;
+    z-index: 9999;
+    top: 0;
 }
 .hamburger-btn {
     display: none;
     cursor: pointer;
     margin: 10px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 24px;
     z-index: -9999999;
 
 }
@@ -668,6 +678,32 @@ h6 {
   letter-spacing: 1px;
 }
 
+.house_price p {
+  letter-spacing: 1px;
+}
+
+@media  screen and (max-width: 1024px) {
+  .house_price {
+    flex-direction: column;
+  }
+
+  .price_container h1 {
+    margin-bottom: 15px;
+  }
+
+  .price_container h3 {
+    margin-bottom: 15px;
+  }
+
+  .price_container p {
+    margin-bottom: 15px;
+  }
+
+  .price_container a {
+    margin-bottom: 15px;
+  }
+}
+
 
 /* ENTORNO */
 
@@ -707,7 +743,9 @@ h6 {
   font-size: 2em;
 }
 
-
+.location_text p {
+  letter-spacing: 1px;
+}
 
 
 /* FOOTER */
@@ -724,7 +762,10 @@ h6 {
   height: 100%;
   padding: 25px;
   gap: 10px;
-  margin-top: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer_container {
@@ -759,7 +800,6 @@ h6 {
 }
 
 .footer_content {
-  /* flex-wrap: nowrap; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -767,14 +807,15 @@ h6 {
   height: 100%;
   margin: 10px;
   width: 100%;
-  padding: 25px;
-  gap: 10px;
 }
 
 .footer_content p {
   text-align: center;
   margin: 10px;
   width: 100%;
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 18px;
 
 }
 
@@ -802,6 +843,10 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
   }
 
@@ -867,3 +912,5 @@ h6 {
   }
   
 }
+
+
